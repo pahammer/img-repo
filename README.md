@@ -13,7 +13,7 @@
   <a href="#notes-on-design">Notes on Design</a>
 </p>
 
-![screenshot](https://github.com/pahammer/img-repo/blob/master/.github/search.mp4)
+![search](https://github.com/pahammer/img-repo/blob/master/.github/search.gif)
 
 </h1>
 
