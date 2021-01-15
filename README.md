@@ -1,8 +1,6 @@
 <br />
 <h1 align="center">
   <br>
-  <img src="" alt="Img Repo" width="200">
-  <br>
   Img Repo
   <br>
 
@@ -15,7 +13,7 @@
   <a href="#notes-on-design">Notes on Design</a>
 </p>
 
-![screenshot]()
+![screenshot](https://github.com/pahammer/img-repo/blob/master/.github/search.mp4)
 
 </h1>
 
@@ -119,7 +117,7 @@ This flow happens behind the scenes with React, so the flow is seamless to the u
 
 <!-- INSERT DATA FLOW / ARCHITECTURE HERE -->
 
-![](https://storage.googleapis.com/shopify-application-storage/diagram_new.png)
+![dataflow](https://github.com/pahammer/img-repo/blob/master/.github/data-flow.png)
 
 1. The Client issues a POST request to flask route '/get-signed-url' with a "filename" parameter. Flask responds with a signed URL (if all goes well).
 2. The Client issues a PUT request to the URL received with the image in the message body
