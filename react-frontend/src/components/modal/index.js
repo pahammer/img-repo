@@ -13,7 +13,8 @@ import {
     Text,
     LabelContainer,
     Checkbox,
-    Loading
+    Loading,
+    Preview
  } from './styles/modal';
 
 export default function Modal({ children, ...restProps }) {
@@ -67,7 +68,7 @@ Modal.ModalButton = function ModalModalButton({ children, ...restProps }) {
     
     return (
         <UploadButtonWrapper {...restProps}>
-            Select Image {children}
+            {children}
         </UploadButtonWrapper>
     );
 };
@@ -101,4 +102,8 @@ Modal.CheckboxField = function ModalCheckboxField({ children, ...restProps }) {
 
 Modal.Loading = function ModalLoading({ children, ...restProps }){
     return <Loading {...restProps}>{children}</Loading>;
+};
+
+Modal.Preview = function ModalPreview({ children, ...restProps }){
+    return <Preview {...restProps}>{children}</Preview>;
 };
