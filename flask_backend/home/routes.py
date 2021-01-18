@@ -5,7 +5,7 @@ from flask import current_app as app
 from flask import json
 from flask import request
 
-from flask_backend.externals.google_storage import generate_signed_url, make_blob_public
+from flask_backend.externals.google_storage import generate_signed_url, make_blob_public, delete_blob
 from flask_backend.externals.google_firestore import update_index
 from flask_backend.externals.google_vision import detect_labels_uri
 
