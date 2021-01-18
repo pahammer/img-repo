@@ -107,6 +107,10 @@ export const UploadButtonWrapper = styled.div`
     cursor: pointer;
   }
 
+  @media (max-width: 700px) {
+    font-size: 13px;
+  }
+
 `;
 
 export const UploadFormContainer = styled.div`
@@ -159,7 +163,29 @@ export const LabelContainer = styled.label`
 export const Loading = styled.div`
 
   img {
-      width: 10%;
+      width: 30%;
   }
 
 `;
+
+export const Preview = styled.div`
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 3px;
+  height: auto;
+  padding: 20px;
+  margin: 15px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  @media (max-width: 700px) {
+    max-width: 200px;
+  }
+  `;
