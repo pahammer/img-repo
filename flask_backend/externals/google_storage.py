@@ -21,3 +21,9 @@ def make_blob_public(bucket_name, filename):
     
     return blob.public_url
 
+def delete_blob(bucket_name, filename):
+    """Deletes a blob"""
+    bucket = storage_client.bucket(bucket_name)
+    blob = bucket.blob(filename)
+
+    blob.delete()

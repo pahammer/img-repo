@@ -63,9 +63,12 @@ def add_image():
             tags = detect_labels_uri(public_url)
         except Exception as e:
             print(e)
-            # no valid tags to tie image to
-            # TODO: image storage cleanup when this occurs
             if 'custom_tags' not in request.form:
+                # cleanup
+                try:
+                    delete_blob(app.config["BUCKET_NAME"], filename)
+                except Exception as e:
+                    print(e)
                 resp.status_code = 417 
                 return resp
 
