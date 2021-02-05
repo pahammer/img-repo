@@ -6,10 +6,6 @@
 
 <h4 align="center">An interactive image repository web application, developed with the Flask and React web frameworks.</h4>
 
-<h3 align="center">
-  <a href="https://shopify-application-301115.nn.r.appspot.com/">View Live</a>
-</h3>
-
 <p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#built-with">Built With</a> •
